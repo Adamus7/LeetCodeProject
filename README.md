@@ -1,8 +1,8 @@
-# Windary
+# My LeetCode Notebook
 
 My Solutions for LeetCode problems written in JavaScript and C#.
 
-Progress: **96 / 949**
+Progress: **1 / 949**
 
 ## Solutions
 | # | Title | JavaScript | C# |  Difficulty |
