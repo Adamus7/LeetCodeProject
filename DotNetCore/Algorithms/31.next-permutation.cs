@@ -32,7 +32,7 @@ using System.Collections.Generic;
 using Algorithms.Utils;
 namespace Algorithms
 {
-    public class Solution031 
+    public class Solution031
     {
         public static int[] NextPermutation(int[] nums) 
         {
