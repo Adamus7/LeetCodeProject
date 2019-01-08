@@ -7,7 +7,7 @@ Pre-requisites:
 -   Dotnet Core
 
 Notes:
-Generate problem file: `leecode show <problem id> -gx -l <lang>`
+-   Generate problem file: `leetcode show <problem id> -gx -l <lang>`
 
 Progress: **3 / 949**
 
