@@ -51,6 +51,31 @@
  * @param {string} s
  * @return {number}
  */
-var lengthOfLongestSubstring = function(s) {
-    
+var lengthOfLongestSubstring = function (s) {
+    let result = 0,
+        left = -1,
+        charMap = {};
+
+    for (let i = 0, l = s.length; i < l; i++) {
+        if (charMap[s[i]] > left) {
+            left = charMap[s[i]];
+        }
+        if (i - left > result) {
+            result = i - left;
+        }
+        charMap[s[i]] = i;
+    }
+    return result;
 };
+
+console.log(lengthOfLongestSubstring('a'));
+console.log(lengthOfLongestSubstring('abcde'));
+console.log(lengthOfLongestSubstring('abbba'));
+console.log(lengthOfLongestSubstring('quesctu'));
+console.log(lengthOfLongestSubstring('bbbbb'));
+console.log(lengthOfLongestSubstring('dvcdfff'));
+console.log(lengthOfLongestSubstring('pwwkew'));
+console.log(lengthOfLongestSubstring('abbba'));
+console.log(lengthOfLongestSubstring('abbbaca'));
+console.log(lengthOfLongestSubstring('abbaca'));
+
